@@ -29,6 +29,15 @@ class Homepage_model extends CI_Model {
                         ->get()
                         ->result();
     }
+      public function get_from_table_where2($tablename,$col1,$val1,$col2,$val2){
+        
+        return $this->db->select('*')
+                        ->from($tablename)
+                        ->where($col1,$val1)
+                        ->where($col2,$val2)
+                        ->get()
+                        ->result();
+    }
     
      //Add to table : return inserted id
     public function add_to_table($tablename,$array)
