@@ -13,7 +13,7 @@ class Homepage extends CI_Controller {
         $toView['page_content'] = date("H:i:s");
         $toView['other_data'] = "<p>See you!</p>";
 //        --example 7th march roop
-        $result = $this->homepage_model->list_table('table1'); 
+//        $result = $this->homepage_model->list_table('table1'); 
         
         $this->load->view('pages/homepage',$toView);
 
